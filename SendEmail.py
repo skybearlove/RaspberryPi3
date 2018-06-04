@@ -1,6 +1,10 @@
+
+# sudo nano /etc/rc.local
+# python3 SendEmail.py
+
 import socket  
 import time  
-import urllib
+import urllib.request import urlopen
 import smtplib  
 from email.mime.multipart import MIMEMultipart  
 from email.mime.text import MIMEText    
@@ -29,7 +33,7 @@ def get_ip_address():
 def check_network():  
     while True:  
         try:  
-            result=urllib.request.urlopen('http://www.google.com').read()  
+            result=urlopen('http://www.google.com').read()  
             print("Network is Ready!")  
             break  
         except Exception:  
