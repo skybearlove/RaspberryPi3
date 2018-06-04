@@ -53,5 +53,5 @@ def get_ip_address():
 if __name__ == '__main__':  
     check_network()  
     ipAddr=get_ip_address()  
-    sendEmail('smtp.cc.ncu.edu.tw','xxxxxx','xxxx','xxxxxx@cc.ncu.edu.tw',['xxxxxx@gmail.com','xxxxxx@oz.nthu.edu.tw'],'IP Address Of Raspberry Pi3',ipAddr) 
+    sendEmail('smtp.xxx','xxxxxx','xxxx','xxxxxx@cc.ncu.edu.tw',['xxxxxx@gmail.com',''],'IP Address Of Raspberry Pi3',ipAddr) 
     print('Email Sended')
